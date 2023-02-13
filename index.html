@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
+    <link href="https://unpkg.com/movement.css/movement.css" rel="stylesheet">
+    <title>KodFolio - V2</title>
+    <meta name="description" content="Hey there, I am Aayaan Kumar, a Web Developer & Designer. Here's my portfolio which contains my awesome works. I have created several
+    apps and websites which you can see here">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Portfolio, Aayaan Kumar , KodFolio, kodfolio">
+    <meta name="author" content="Aayaan Kumar">
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <section class="navSec" data-m="bounce-up">
+        <div class="navBox">
+
+            <div class="logoBox">
+                <a href="/" class="logo">KodFolio</a>
+                <img src="./assets/icons/menu.png" alt="menu" id="hamburger" onclick="hamClick()">
+            </div>
+
+            <div class="items1">
+                <a href="#header">Home</a>
+                <a href="#about">About Me</a>
+                <a href="#skills">My Skills</a>
+            </div>
+
+            <div class="items2">
+                <a href="/">My Blogs</a>
+                <a href="#contact">Contact Me</a>
+            </div>
+
+            <div class="socials">
+                <a href="https://discord.com/users/1047610833536040961"><img src="./assets/icons/discord.png"
+                        alt=""></a>
+                <a href="https://replit.com/@Aayaan01"><img src="./assets/icons/replit.png" alt=""></a>
+                <a href="hhttps://dribbble.com/Aayaan_dev?onboarding=true"><img src="./assets/icons/dribbble.png"
+                        alt=""></a>
+            </div>
+
+
+        </div>
+    </section>
+
+
+    <!-- Data -->
+    <section class="dataSec" data-m="bounce-up">
+        <div class="dataBox">
+
+            <!-- Header Start -->
+            <div class="header" id="header">
+                <div class="imgBox">
+                    <img src="./assets/me.png" alt="me">
+                </div>
+                <div class="headText">
+                    <h3>Hey there, I'm</h3>
+                    <h5>Aayaan Kumar</h5>
+                    <h4>Web Developer & Designer (Learning)</h4>
+                </div>
+            </div>
+            <!-- Header End -->
+
+            <!-- About Start -->
+            <div class="about" id="about">
+                <h2>About Me</h2>
+                <p>Hey there this is my portfolio. I am learning Web Development and Designing. I have created several
+                    apps and websites which you can see here. I want to learn as many IT skills as I can.I was
+                    introduced to coding in class 9th by my AI teacher. I thank her for introducing me to coding. I
+                    started with small python programs and when I get to know about Web development, I started learning
+                    it. That's all for now and Thanks for visiting my portfolio.</p>
+                <a href="#contact">Contact Me</a>
+            </div>
+            <!-- About End -->
+
+            <!-- Skills Start -->
+            <div class="skills" id="skills">
+                <h2>My Skills</h2>
+
+                <div class="skillsBox">
+
+                    <div class="box">
+                        <img src="./assets/icons/check.png" alt="icon">
+                        <div class="text">
+                            <b>HTML CSS</b>
+                            <h5>Intermediate</h5>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <img src="./assets/icons/check.png" alt="icon">
+                        <div class="text">
+                            <b>JavaScript</b>
+                            <h5>Intermediate</h5>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <img src="./assets/icons/check.png" alt="icon">
+                        <div class="text">
+                            <b>Next JS</b>
+                            <h5>Learning</h5>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <img src="./assets/icons/check.png" alt="icon">
+                        <div class="text">
+                            <b>Figma</b>
+                            <h5>Intermediate</h5>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <img src="./assets/icons/check.png" alt="icon">
+                        <div class="text">
+                            <b>React Native</b>
+                            <h5>Learning</h5>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <img src="./assets/icons/check.png" alt="icon">
+                        <div class="text">
+                            <b>Photoshop</b>
+                            <h5>Learning</h5>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <img src="./assets/icons/check.png" alt="icon">
+                        <div class="text">
+                            <b>Video Editing</b>
+                            <h5>Learning</h5>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <img src="./assets/icons/check.png" alt="icon">
+                        <div class="text">
+                            <b>HTML CSS</b>
+                            <h5>Intermediate</h5>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- Skills End -->
+
+            <!-- Contact Start -->
+            <div class="contact" id="contact">
+                <h2>Contact</h2>
+                <form action="https://formspree.io/f/mayzepdy" method="POST">
+                    <input type="text" name="name" placeholder="Your name..." autocomplete="off" required>
+                    <input type="email" name="email" placeholder="Your email..." autocomplete="off" required>
+                    <textarea name="message" placeholder="Your message...
+                    " autocomplete="off" required></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+            <!-- Contact End -->
+
+        </div>
+    </section>
+
+
+    <!-- Works -->
+    <section class="workSec" data-m="bounce-up">
+        <div class="workBox">
+            <h2>My Works</h2>
+
+            <div class="works">
+
+                <a class="work" href="https://getpostgp.netlify.app" target="_blank">
+                    <img src="./assets/getpost.png" alt="">
+                    <h4>GetPost - A image sharing web app</h4>
+                    <p>React Social Media App</p>
+                    <p>From Youtube - JavaScript Mastery</p>
+                </a>
+
+                <a class="work" href="https://bekoder.vercel.app" target="_blank">
+                    <img src="./assets/bekoder.png" alt="">
+                    <h4>BeKoder - Code Sharing</h4>
+                    <p>Next JS App</p>
+                    <p>My Imagination & Design</p>
+                </a>
+
+                <a class="work" href="https://androidclicker.vercel.app" target="_blank">
+                    <img src="./assets/aclick.png" alt="">
+                    <h4>Android Clicker - Clicker game based on Android</h4>
+                    <p>HTML CSS JS Game</p>
+                    <p>My Imagination & Design</p>
+                </a>
+
+                <a class="work" href="https://angryants.vercel.app" target="_blank">
+                    <img src="./assets/angryants.png" alt="">
+                    <h4>Angry Ants - Clash of Clans Clan website</h4>
+                    <p>HTML CSS Website</p>
+                    <p>My Imagination & Design</p>
+                </a>
+
+                <a class="work" href="https://notefyapp.vercel.app" target="_blank">
+                    <img src="./assets/notefy.png" alt="">
+                    <h4>Notefy - Dark theme notes app</h4>
+                    <p>React Native App</p>
+                    <p>From Youtube - Darwin Tech</p>
+                </a>
+
+                <a class="work" href="https://questioner.vercel.app" target="_blank">
+                    <img src="./assets/questioner.png" alt="">
+                    <h4>Questioner - Quiz App</h4>
+                    <p>React Native App</p>
+                    <p>From Youtube - Overreacted</p>
+                </a>
+
+                <a class="work" href="https://programmersera.vercel.app" target="_blank">
+                    <img src="./assets/pera.png" alt="">
+                    <h4>Programmers Era - Projects Website</h4>
+                    <p>HTML CSS</p>
+                    <p>My Imagination & Design</p>
+                </a>
+
+
+
+            </div>
+
+        </div>
+    </section>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

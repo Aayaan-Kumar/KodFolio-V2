@@ -1,0 +1,941 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Poppins&family=Roboto&display=swap');
+
+:root {
+    --tran: ease-in-out 200ms;
+    --shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    --bg-white: rgba(255, 255, 255, 0.01);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-image: url("./assets/bg4.png");
+    display: flex;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.navSec {
+    height: 100vh;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: red; */
+    /* border-right: 1px solid #ccc; */
+}
+
+.dataSec {
+    height: 100vh;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: black; */
+    /* border-right: 1px solid #ccc; */
+}
+
+.workSec {
+    height: 100vh;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: blue; */
+}
+
+.navBox,
+.workBox {
+    width: 90%;
+    height: fit-content;
+    margin: auto;
+
+    background: var(--bg-white);
+    box-shadow: var(--shadow);
+    backdrop-filter: blur(23px);
+    border-radius: 35px;
+
+    max-height: 95%;
+}
+
+.dataBox {
+    width: 85%;
+    height: fit-content;
+    margin: auto;
+
+    background: var(--bg-white);
+    box-shadow: var(--shadow);
+    backdrop-filter: blur(23px);
+    border-radius: 35px;
+
+    max-height: 95%;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+.workBox {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.navBox .logoBox {
+    margin-top: 16px;
+    width: 100%;
+    /* padding: 8px 5px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+}
+
+.navBox .logoBox a.logo {
+    color: white;
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin-left: 12px;
+    text-decoration: none;
+}
+
+.navBox .logoBox img {
+    width: 32px;
+    height: 32px;
+    color: #ccc;
+    margin-right: 10px;
+    display: none;
+}
+
+.navBox .items1 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 8px;
+    justify-content: start;
+    width: 100%;
+}
+
+.navBox .items2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.navBox .items1 a,
+.navBox .items2 a {
+    font-size: 32px;
+    color: #efefef;
+    font-weight: 400;
+    font-family: 'Kanit', sans-serif;
+    width: 96%;
+    padding: 6px 0;
+    transition: var(--tran);
+    padding-left: 12px;
+    text-decoration: none;
+}
+
+.navBox .items1 a:hover,
+.navBox .items2 a:hover {
+    background-color: rgba(255, 255, 255, 0.02);
+    backdrop-filter: blur(23px);
+    cursor: pointer;
+    box-shadow: var(--shadow);
+    border-radius: 15px;
+}
+
+.navBox .socials {
+    display: flex;
+    padding: 8px 5px;
+    justify-content: end;
+    align-items: baseline;
+    width: 90%;
+    gap: 12px;
+    margin: 130px auto 0 auto;
+}
+
+.navBox .socials a {
+    width: 32px;
+    height: 32px;
+    color: #efefef;
+    transition: var(--tran);
+}
+
+.navBox .socials a img {
+    width: 32px;
+    height: 32px;
+    color: #efefef;
+}
+
+.navBox .socials a:hover {
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: var(--shadow);
+    transform: scale(1.1);
+}
+
+/* Data Section */
+.dataBox::-webkit-scrollbar {
+    width: 0;
+    border-radius: 6px;
+}
+
+.dataBox::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.dataBox::-webkit-scrollbar-thumb {
+    color: aqua;
+    width: 10px;
+}
+
+
+.dataBox .header {
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid #ccc;
+}
+
+.dataBox .header .imgBox {
+    width: 100%;
+    height: 550px;
+}
+
+.dataBox .header .imgBox img {
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+    /* border-radius: ; */
+}
+
+.dataBox .header .headText {
+    width: 100%;
+    height: 35%;
+    margin: 15px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.dataBox .header .headText h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #dbdbdb;
+    margin-left: 12px;
+}
+
+.dataBox .header .headText h5 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 35px;
+    color: #fff;
+    margin-left: 12px;
+}
+
+.dataBox .header .headText h4 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: rgb(238, 238, 238);
+    margin-left: 12px;
+}
+
+.dataBox .about {
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid #ccc;
+    margin-top: 25px;
+    /* height: fit-content;
+    width: 92%;
+    margin: 35px auto;
+    background: var(--bg-white);
+    box-shadow: var(--shadow);
+    backdrop-filter: blur(23px);
+    border-radius: 35px;*/
+    padding: 10px 0 25px 0; 
+}
+
+.dataBox .about h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 35px;
+    margin-left: 12px;
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 24px;
+    /* margin-top: 15px; */
+}
+
+.dataBox .about p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    margin-left: 12px;
+    color: #efefef;
+    max-width: 90%;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.dataBox .about a {
+    /* margin-top: 20px; */
+    padding: 10px 8px;
+    font-size: 22px;
+    border-radius: 10px;
+    color: #ccc;
+    font-family: 'Roboto', sans-serif;
+    transition: var(--tran);
+    text-decoration: none;
+    margin-left: 12px;
+    margin-bottom: 40px;
+    border: 1px solid #ccc;
+}
+
+.dataBox .about a:hover {
+    background-color: rgba(255, 255, 255, 0.02);
+    backdrop-filter: blur(23px);
+    cursor: pointer;
+    box-shadow: var(--shadow);
+    border: 1px solid transparent;
+}
+
+.dataBox .skills {
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    margin-top: 25px;
+    padding-bottom: 40px;
+}
+
+.dataBox .skills h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 35px;
+    margin-left: 12px;
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+
+.dataBox .skills .skillsBox {
+    width: 90%;
+    height: fit-content;
+    padding: 20px 0;
+    /* background: var(--bg-white);
+    box-shadow: var(--shadow);
+    backdrop-filter: blur(23px); */
+    border-radius: 35px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    gap: 12px;
+    border: 1px solid #ccc;
+    transition: var(--tran);
+}
+
+.dataBox .skills .skillsBox:hover {
+    box-shadow: var(--shadow);
+    background-color: var(--bg-white);
+    border: 1px solid transparent;
+}
+
+.dataBox .skills .skillsBox .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 8px;
+    width: fit-content;
+    margin-left: 50px;
+    /* justify-self: center; */
+}
+
+.dataBox .skills .skillsBox .box img {
+    width: 16px;
+    height: 16px;
+}
+
+.dataBox .skills .skillsBox .box .text {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.dataBox .skills .skillsBox .box .text b {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 19px;
+    color: whitesmoke; 
+}
+
+.dataBox .skills .skillsBox .box .text h5 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    color: #dedede; 
+}
+
+.dataBox .contact {
+    width: 100%;
+    height: fit-content;
+    margin-top: 25px;
+    margin-bottom: 300px;
+}
+
+.dataBox .contact h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 35px;
+    margin-left: 12px;
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+
+.dataBox .contact form {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+    gap: 15px;
+    flex-direction: column;
+    height: fit-content;
+    margin: auto;
+}
+
+.dataBox .contact form input {
+    width: 95%;
+    background: transparent;
+    margin: auto;
+    height: 30px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    font-size: 18px;
+    text-align: left;
+    padding: 6px 10px;
+    color: #ccc;
+    font-family: 'Roboto', sans-serif;
+    outline: none;
+}
+
+.dataBox .contact form input:active {
+    background: transparent;
+    box-shadow: 0 0 10px 4px #ffffff0b;
+}
+
+.dataBox .contact form textarea {
+    width: 95%;
+    background: transparent;
+    margin: auto;
+    height: 80px;
+    max-height: 80px;
+    resize: none;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    font-size: 18px;
+    text-align: left;
+    padding: 6px 10px;
+    color: #ccc;
+    font-family: 'Roboto', sans-serif;
+    outline: none;
+}
+
+.dataBox .contact form textarea:active {
+    background: var(--bg-white);
+    box-shadow: var(--shadow);
+    backdrop-filter: blur(23px);
+}
+
+.dataBox .contact form button {
+    padding: 10px 15px;
+    color: #ccc;
+    font-size: 24px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-family: 'Roboto', sans-serif;
+    background: transparent;
+    transition: var(--tran);
+}
+
+.dataBox .contact form button:hover {
+    background: var(--bg-white);
+    box-shadow: var(--shadow);
+    backdrop-filter: blur(23px);
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+
+
+.workBox::-webkit-scrollbar {
+    width: 0;
+    border-radius: 6px;
+}
+
+.workBox::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.workBox::-webkit-scrollbar-thumb {
+    color: aqua;
+    width: 10px;
+}
+
+.workBox h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 35px;
+    margin-left: 12px;
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 24px;
+    margin-top: 10px;
+}
+
+.workBox .works {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    height: fit-content;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 6px;
+    margin-bottom: 100px;
+}
+
+.workBox .works .work {
+    width: 95%;
+    height: fit-content;
+    margin: auto;
+    padding: 10px 0;
+    border-radius: 25px;
+    border: 1px solid #efefef;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    text-decoration: none;
+    transition: var(--tran);
+    
+    /* align-items: center;
+    justify-content: center; */
+    
+
+}
+
+.workBox .works .work:hover {
+    transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+    cursor: pointer;
+    background: var(--bg-white);
+    box-shadow: var(--shadow);
+    backdrop-filter: blur(23px);
+    border: 1px solid transparent;
+}
+
+.workBox .works .work img {
+    width: 90%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin: auto;
+}
+
+.workBox .works .work h4 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    color: #ccc;
+    text-decoration: none;
+    max-width: 90%;
+    text-align: left;
+    margin-left: 5%;
+    line-height: 22px;
+    margin-bottom: 10px;
+    margin-top: 8px;
+
+}
+
+.workBox .works .work p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #c4c4c4;
+    text-decoration: none;
+    max-width: 90%;
+    text-align: left;
+    margin-left: 5%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1000px) {
+    body {
+        flex-direction: column;
+        background-size: cover;
+        overflow-y: scroll;
+        scroll-behavior: smooth;
+    }
+
+    .navSec,
+    .dataSec,
+    .workSec {
+        height: fit-content;
+        width: 100%;
+    }
+
+    .workSec {
+        margin-bottom: 20px;
+    }
+
+    .navBox,
+    .dataBox,
+    .workBox {
+        width: 92%;
+        margin: auto;
+        height: fit-content;
+        padding: 12px 0;
+        margin-top: 15px;
+    }
+
+    .navBox .items1,
+    .navBox .items2 {
+        justify-content: center;
+        align-items: center;
+        margin-top: 6px;
+        display: none;
+    }
+
+    .navBox .items1 a,
+    .navBox .items2 a {
+        font-size: 18px;
+        padding: 5px 0;
+        padding-left: 0;
+    }
+
+    .navBox .items1.active,
+    .navBox .items2.active,
+    .navBox .socials.active {
+        display: flex;
+        width: 100%;
+    }
+
+    .navBox .socials {
+        padding: 5px;
+        justify-content: center;
+        align-items: center;
+        margin: 50px auto 0 auto;
+        gap: 6px;
+        display: none;
+    }
+
+    .navBox .logoBox {
+        margin-top: 2px;
+        border: none;
+    }
+
+    .navBox .logoBox img {
+        display: block;
+        width: 26px;
+        height: 26px;
+        cursor: pointer;
+    }
+
+    .navBox .logoBox a.logo {
+        font-size: 32px;
+    }
+
+    .navBox .logoBox img {
+        width: 26px;
+        height: 26px;
+    }
+
+    .navBox .items1 a,
+    .navBox .items2 a {
+        font-size: 24px;
+    }
+
+    .navBox .socials {
+        margin-top: 100px;
+    }
+
+    .navBox .socials a {
+        width: 26px;
+        height: 26px;
+    }
+
+    .navBox .socials a img {
+        width: 26px;
+        height: 26px;
+    }
+
+    .dataBox .header .imgBox {
+        height: 800px;
+    }
+
+    .dataBox .header .imgBox img {
+        height: 800px;
+    }
+
+    .dataBox .skills .skillsBox .box {
+        margin-left: 100px;
+    }
+
+    .dataBox .contact {
+        margin-bottom: 10px;
+    }
+
+    /* .workBox .works .work {
+        width: 85%;
+    } */
+
+    .workBox .works .work img {
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .navBox .logoBox a.logo {
+        font-size: 35px;
+        margin-left: 20px;
+    }
+
+    .navBox .items1 a,
+    .navBox .items2 a {
+        font-size: 24px;
+        padding: 6px 0 6px 6px;
+    }
+
+    .navBox .socials {
+        gap: 8px;
+        margin: 0;
+    }
+
+    .navBox .socials a {
+        width: 30px;
+        height: 30px;
+    }
+
+    .navBox .socials a img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .dataBox .header .headText h3 {
+        font-size: 20px;
+    }
+
+    .dataBox .header .headText h5 {
+        font-size: 35px;
+    }
+
+    .dataBox .header .headText h4 {
+        font-size: 24px;
+    }
+
+    .dataBox .about {
+        margin-top: 14px;
+    }
+
+    .dataBox .about h2 {
+        font-size: 32px;
+        margin-bottom: 18px;
+    }
+
+    .dataBox .about p {
+        font-size: 16px;
+    }
+
+    .dataBox .about a {
+        font-size: 18px;
+    }
+
+    .dataBox .skills .skillsBox .box {
+        margin-left: 65px;
+    }
+}
+
+/* @media screen and (max-width: 580px) {
+    .navBox .logoBox a.logo {
+        font-size: 20px;
+    }
+
+    .navBox .items1 a,
+    .navBox .items2 a {
+        font-size: 14px;
+    }
+
+    .navBox .socials a {
+        width: 16px;
+        height: 16px;
+    }
+
+    .navBox .socials a img {
+        width: 16px;
+        height: 16px;
+    }
+
+    .navBox .logoBox img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .dataBox .header .imgBox {
+        height: 280px;
+    }
+
+    .dataBox .header .imgBox img {
+        height: 280px;
+    }
+
+    .dataBox .header .headText h3 {
+        font-size: 12px;
+        margin-left: 7px;
+    }
+
+    .dataBox .header .headText h5 {
+        font-size: 28px;
+        margin-left: 7px;
+    }
+
+    .dataBox .header .headText h4 {
+        font-size: 16px;
+        margin-left: 7px;
+    }
+
+    .dataBox .about {
+        margin-top: 12px;
+    }
+
+    .dataBox .about h2 {
+        font-size: 24px;
+        margin-bottom: 15px;
+        margin-left: 7px;
+    }
+
+    .dataBox .about p {
+        font-size: 10px;
+        margin-left: 7px;
+    }
+
+    .dataBox .about a {
+        font-size: 12px;
+        padding: 8px 6px;
+        margin-left: 7px;
+    }
+} */
+
+@media screen and (max-width: 600px) {
+    body {
+        flex-direction: column;
+        background-size: cover;
+        overflow-y: scroll;
+    }
+
+    .navSec,
+    .dataSec,
+    .workSec {
+        height: fit-content;
+        width: 100%;
+    }
+
+    .navBox,
+    .dataBox,
+    .workBox {
+        width: 92%;
+        margin: auto;
+        height: fit-content;
+        padding: 12px 0;
+        margin-top: 15px;
+    }
+
+    .navBox .logoBox {
+        margin-top: 2px;
+        border: none;
+    }
+
+    .navBox .logoBox a.logo {
+        font-size: 28px;
+        margin-left: 12px;
+    }
+
+    .navBox .logoBox img {
+        display: block;
+        width: 26px;
+        height: 26px;
+        cursor: pointer;
+    }
+
+    .navBox .items1,
+    .navBox .items2 {
+        justify-content: center;
+        align-items: center;
+        margin-top: 6px;
+        display: none;
+    }
+
+    .navBox .items1 a,
+    .navBox .items2 a {
+        font-size: 18px;
+        padding: 5px 0;
+        padding-left: 0;
+    }
+
+    .navBox .items1.active,
+    .navBox .items2.active,
+    .navBox .socials.active {
+        display: flex;
+        width: 100%;
+    }
+
+    .navBox .socials {
+        padding: 5px;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        gap: 6px;
+        display: none;
+    }
+
+    .navBox .socials a {
+        width: 26px;
+        height: 26px;
+    }
+
+    .navBox .socials a img {
+        width: 26px;
+        height: 26px;
+    }
+
+    .dataBox .header .imgBox {
+        height: 600px;
+    }
+
+    .dataBox .header .imgBox img {
+        height: 600px;
+    }
+
+    .dataBox .skills .skillsBox .box {
+        margin-left: 25px;
+    }
+
+    .dataBox .skills .skillsBox .box .text b {
+        font-size: 15px;
+    }
+
+    .dataBox .skills .skillsBox .box .text h5 {
+        font-size: 9px;
+    }
+}
