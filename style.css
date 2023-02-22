@@ -284,11 +284,11 @@ body {
 
 .dataBox .about a {
     /* margin-top: 20px; */
-    padding: 10px 8px;
-    font-size: 22px;
+    padding: 8px 8px;
+    font-size: 24px;
     border-radius: 10px;
     color: #ccc;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Kanit', sans-serif;
     transition: var(--tran);
     text-decoration: none;
     margin-left: 12px;
@@ -302,6 +302,7 @@ body {
     cursor: pointer;
     box-shadow: var(--shadow);
     border: 1px solid transparent;
+    transform: scale(1.02);
 }
 
 .dataBox .skills {
