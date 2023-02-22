@@ -303,6 +303,7 @@ body {
     box-shadow: var(--shadow);
     border: 1px solid transparent;
     transform: scale(1.02);
+    -webkit-transform: scale(1.02);
 }
 
 .dataBox .skills {
